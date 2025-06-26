@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 export default function HomePage() {
   return (
-    <div className="relative w-full min-h-screen font-serif bg-black text-white">
+<div className="relative w-full min-h-screen font-sans bg-black text-white">
       {/* Hero Video Section */}
       <section className="relative w-full h-screen overflow-hidden">
         <video
@@ -50,13 +50,31 @@ export default function HomePage() {
       </section>
 
       <section id="videos" className="px-4 py-12 bg-gray-900 text-white text-sm">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-2xl font-serif font-semibold mb-4">Explainer Videos</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <iframe className="aspect-video w-full" src="https://www.youtube.com/embed/1-HeLKZ-154" title="1-Minute Explainer" allowFullScreen />
-            <iframe className="aspect-video w-full" src="https://www.youtube.com/embed/NND0gmNSrxE" title="Record Analogy" allowFullScreen />
-          </div>
-        </div>
+        <<div className="bg-black py-12 px-4 flex flex-col items-center">
+  <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
+    <div className="w-full max-w-md aspect-video">
+      <iframe
+        className="w-full h-full rounded-lg shadow-lg"
+        src="https://www.youtube.com/embed/1-HeLKZ-154"
+        title="1 Minute Explainer"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      />
+    </div>
+    <div className="w-full max-w-md aspect-video">
+      <iframe
+        className="w-full h-full rounded-lg shadow-lg"
+        src="https://www.youtube.com/embed/NND0gmNSrxE"
+        title="Record Analogy"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      />
+    </div>
+  </div>
+</div>
+
       </section>
 
       <section id="paper" className="px-4 py-12 bg-black text-white text-sm">
